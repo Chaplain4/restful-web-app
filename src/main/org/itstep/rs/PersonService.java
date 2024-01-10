@@ -10,4 +10,6 @@ public interface PersonService {
     public Response deletePerson(int id);
     public Person getPerson(int id);
     public List<Person> getAllPersons();
+    public Response updatePerson(Person person);
+    public List<Person> getAllPersonsByAge(int from, int to);
 }

@@ -7,15 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40c74f2e-20a5-4165-b735-39a1fd32be7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonJSONServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonXMLServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restful-web-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/org/itstep/rs/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/org/itstep/rs/TestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/org/itstep/rs/TestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/org/itstep/rs/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/restful-web-app.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/restful-web-app.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/classes/main/org/itstep/rs/TestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/classes/main/org/itstep/rs/TestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/classes/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/classes/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,7 +236,9 @@
       <option name="presentableId" value="Default" />
       <updated>1704731400248</updated>
       <workItem from="1704731404621" duration="3595000" />
-      <workItem from="1704735174991" duration="4639000" />
+      <workItem from="1704735174991" duration="4667000" />
+      <workItem from="1704902075529" duration="159000" />
+      <workItem from="1704902569529" duration="9353000" />
     </task>
     <servers />
   </component>
@@ -243,7 +250,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
