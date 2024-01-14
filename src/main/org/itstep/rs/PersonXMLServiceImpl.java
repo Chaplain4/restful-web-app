@@ -1,8 +1,12 @@
 package main.org.itstep.rs;
 
+import main.org.itstep.rs.dao.AddressDAO;
+import main.org.itstep.rs.dao.PersonDAO;
+import main.org.itstep.rs.dao.ResponseDAO;
 import main.org.itstep.rs.model.Address;
 import main.org.itstep.rs.model.Person;
 import main.org.itstep.rs.model.Response;
+import main.org.itstep.rs.service.JPAService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -14,11 +18,11 @@ import java.util.List;
 @Produces(MediaType.APPLICATION_XML)
 public class PersonXMLServiceImpl implements PersonService {
 
-    private static List<Person> personsList = new ArrayList<>();
 
-    static {
-        personsList.add(new Person(1, "John", 22, new Address(1, "Minsk", 220110)));
-    }
+    AddressDAO ad = new AddressDAO();
+    PersonDAO pd = new PersonDAO();
+    ResponseDAO rd = new ResponseDAO();
+    private static List<Person> personsList = new ArrayList<>();
 
     @Override
     @POST
@@ -26,7 +30,7 @@ public class PersonXMLServiceImpl implements PersonService {
     public Response createPerson(Person person) {
         Response response = new Response();
         int newId = person.getId();
-        personsList.forEach(person1 -> {
+        pd.findAll().forEach(person1 -> {
             if (person1.getId() == newId) {
                 response.setStatus(false);
                 response.setMsg("Person with id " + newId + " already exists!");
@@ -38,7 +42,7 @@ public class PersonXMLServiceImpl implements PersonService {
             return response;
         }
         // add new person
-        personsList.add(person);
+        pd.create(person);
         response.setStatus(true);
         response.setMsg("Person with id " + newId + " successfully added!");
         return response;
@@ -49,14 +53,16 @@ public class PersonXMLServiceImpl implements PersonService {
     @Path("/update")
     public Response updatePerson(Person person) {
         Response response = new Response();
-        if (getPerson(person.getId()) == null) {
+        if (pd.findById(person.getId()) == null) {
             response.setStatus(false);
             response.setMsg("No user with ID " + person.getId() + " found!");
         } else {
-            for (Person p : personsList) {
+            for (Person p : pd.findAll()) {
                 if (p.getId() == person.getId()) {
                     p.setName(person.getName());
                     p.setAge(person.getAge());
+                    p.setAddress(person.getAddress());
+                    pd.update(p);
                     response.setStatus(true);
                     response.setMsg("User with ID " + person.getId() + " updated!");
                 }
@@ -68,10 +74,11 @@ public class PersonXMLServiceImpl implements PersonService {
     @Override
     @GET
     @Path("/get_all_by_age")
-    public List<Person> getAllPersonsByAge(@QueryParam("from") int from, @QueryParam("to")int to) {
-        ArrayList newList = new ArrayList<>();
-        personsList.forEach(person -> {
-            if (person.getAge() >= from &&person.getAge() <= to) {
+    public List<Person> getAllPersonsByAge(@QueryParam("from") int from, @QueryParam("to") int to) {
+        List<Person> allList = pd.findAll();
+        List<Person> newList = new ArrayList<>();
+        allList.forEach(person -> {
+            if (person.getAge() >= from && person.getAge() <= to) {
                 newList.add(person);
             }
         });
@@ -83,13 +90,11 @@ public class PersonXMLServiceImpl implements PersonService {
     @Path("/update/{id}")
     public Response deletePerson(@PathParam("id") int id) {
         Response response = new Response();
-        List<Person> personsToBeRemovedList = new ArrayList<>();
-        personsToBeRemovedList.add(getPerson(id));
-        if (personsToBeRemovedList.isEmpty()) {
+        if (pd.findById(id) == null) {
             response.setStatus(false);
             response.setMsg("Person with id " + id + " not found!");
         } else {
-            personsList.removeAll(personsToBeRemovedList);
+            pd.deleteById(id);
             response.setStatus(true);
             response.setMsg("Person with id " + id + " successfully removed!");
         }
@@ -100,18 +105,13 @@ public class PersonXMLServiceImpl implements PersonService {
     @GET
     @Path("/get/{id}")
     public Person getPerson(@PathParam("id") int id) {
-        for (Person p : personsList) {
-            if (p.getId() == id) {
-                return p;
-            }
-        }
-        return null;
+        return pd.findById(id);
     }
 
     @Override
     @GET
     @Path("/get_all")
     public List<Person> getAllPersons() {
-        return personsList;
+        return pd.findAll();
     }
 }

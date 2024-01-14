@@ -5,24 +5,24 @@
       <artifact name="restful-web-app:war" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="40c74f2e-20a5-4165-b735-39a1fd32be7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonJSONServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonXMLServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonJSONServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonJSONServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonXMLServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/PersonXMLServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/org/itstep/rs/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/model/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/org/itstep/rs/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/org/itstep/rs/model/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/org/itstep/rs/model/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/org/itstep/rs/TestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/org/itstep/rs/TestService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/restful-web-app.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/restful-web-app.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/classes/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/classes/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/restful-web-app/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/restful-web-app/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/classes/main/org/itstep/rs/TestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/restful-web-app/WEB-INF/classes/main/org/itstep/rs/TestService.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,40 +46,27 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" value="" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2agDbcmIhRH4vKzVEfYtw8O9EVd" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Documents/restful-web-app&quot;
+  }
+}</component>
   <component name="RunManager">
-    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.82" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="restful-web-app:war">
@@ -115,6 +102,21 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -225,6 +227,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -239,23 +242,39 @@
       <workItem from="1704735174991" duration="4667000" />
       <workItem from="1704902075529" duration="159000" />
       <workItem from="1704902569529" duration="9353000" />
+      <workItem from="1705134142423" duration="9196000" />
+      <workItem from="1705248394852" duration="1375000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/org/itstep/rs/service/JPAService.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/org/itstep/rs/service/JPAService.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
